@@ -45,6 +45,10 @@
     height: 1.25rem;
 }
 
+.write__img {
+    display: none;
+}
+
 .input__icons input:focus {
     border: none;
     outline: none;
@@ -53,5 +57,15 @@
 @media (max-width:1200px) {
     .hero__col2 {
         display: none;
+    }
+}
+
+@media (max-width:549px) {
+    .write__img {
+        display: flex;
+        position: fixed;
+        margin-left: 25rem;
+        margin-top: 5.5rem;
+        z-index: 9999;
     }
 }

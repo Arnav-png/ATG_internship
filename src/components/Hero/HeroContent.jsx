@@ -9,6 +9,7 @@ import LocationOnIcon from '@material-ui/icons/LocationOn';
 import CreateIcon from '@material-ui/icons/Create';
 import Card2 from '../HeroCon/Card2'
 import Card3 from '../HeroCon/Card3'
+import write from '../../Images/write.png'
 
 const HeroContent = (props) => {
     return (
@@ -44,6 +45,7 @@ const HeroContent = (props) => {
                 <div className="location__line"></div>
                 <div className="hero__text"> 🛈 Your location will help us serve better and extend a personalised experience.</div>
             </div>
+            <div className="write__img"><img src={write} alt="" /></div>
 
         </div>
     )

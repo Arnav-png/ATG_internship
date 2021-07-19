@@ -273,4 +273,12 @@ col1__buttons h2 {
     .modal__col1 {
         margin-left: 3.5rem;
     }
+    .modal__crossicon {
+        margin-top: 2rem;
+        z-index: 999;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
 }
