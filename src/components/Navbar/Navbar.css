@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+.nav__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    height: 72px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.nav__logo {
+    margin: 24px 0 24px 72px;
+    cursor: pointer;
+}
+
+.nav__input {
+    height: 42px;
+    width: 360px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+    font-family: sans-serif;
+    margin: 16px 0 14px 0;
+    outline: none;
+    text-decoration: none;
+    background-color: #F2F2F2;
+    ;
+}
+
+.nav__search {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+.nav__searchIcon {
+    margin-left: 50px;
+    position: absolute;
+    left: -35px;
+    top: 26px;
+}
+
+.nav__input::placeholder {
+    text-align: center;
+}
+
+.hero__img {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.6) 100%), url('C:\Users\ARNAV\Desktop\Internship\clone-website-react\src\Images\hero.png');
+    position: relative;
+    background-size: cover;
+    height: 60.94182825484764vh;
+    width: 93.75vw;
+    width: 100%;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 200px;
+    bottom: 80px;
+    line-height: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.hero__content h1 {
+    size: 36px;
+}
+
+.hero__content p {
+    size: 18px;
+}
+
+
+/* image needs adjusting */
+
+.nav__login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 144px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-style: normal;
+    /* font-weight: 500; */
+    /* font-size: 16px; */
+    /* line-height: 21px; */
+}
+
+.nav__login h5 {
+    color: #2E2E2E;
+}
+
+.nav__login h5 span {
+    color: cornflowerblue;
+    margin-right: 7px;
+    cursor: pointer;
+}
+
+.nav__dropicon {
+    position: absolute;
+    top: 20px;
+    right: -21px;
+    cursor: pointer;
+}
+
+@media (max-width:930px) {
+    .nav__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: crimson; */
+    }
+    .nav__logo img {
+        width: 5.5rem;
+        height: 1.2rem;
+        margin-left: -1rem;
+    }
+    .nav__search {
+        width: .5rem;
+    }
+    .nav__search input::placeholder {
+        color: #F2F2F2;
+    }
+    .nav__searchIcon {
+        left: 0;
+    }
+    .nav__login {
+        width: 1.5rem;
+        margin-left: .5rem;
+    }
+}
+
+@media (max-width:550px) {
+    .nav__main {
+        display: none;
+    }
+    .hero__content {
+        display: flex;
+        align-items: left;
+        font-size: 1rem;
+        flex-wrap: wrap;
+        left: 1rem
+    }
+    .hero__img {
+        width: 550px;
+    }
+}

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap');
+.backdrop {
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+}
+
+.modal {
+    font-family: IBM Plex Sans;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+    background-color: white;
+    padding: 1rem;
+    text-align: center;
+    width: 46rem;
+    height: 28.563rem;
+    z-index: 10;
+    position: fixed;
+    /* top: 20vh;
+    left: calc(50% - 15rem); */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal__crossicon {
+    z-index: 10;
+    top: -30px;
+    right: 0;
+    position: fixed;
+    cursor: pointer;
+}
+
+.modal__cols {
+    margin-top: 1.938rem;
+}
+
+.modal__cols22 {
+    margin-top: .3rem;
+    position: absolute;
+    top: 3.125rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.modal__main h3 {
+    color: rgba(0, 138, 69, 1);
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.modal__main {
+    background-color: rgba(239, 255, 244, 1);
+    width: 48rem;
+    height: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.modal__cols {
+    position: absolute;
+    top: 3.125rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.col1__main h1 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-left: 1.5rem;
+}
+
+.modal__col1 {
+    width: 23 rem;
+}
+
+.modal__col2 {
+    width: 23rem;
+    text-align: center;
+    font-size: 0.813rem;
+    font-weight: normal;
+    font-style: normal;
+    font-family: IBM Plex Sans;
+}
+
+.modal__col2 h3 span:nth-child(1) {
+    color: #3D3D3D;
+}
+
+.modal__col2 h3 span:nth-child(2) {
+    color: cornflowerblue;
+    cursor: pointer;
+}
+
+.modal__col2 p {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 16px;
+}
+
+.signin__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    position: relative;
+}
+
+.btn1 {
+    background: #2F6CE5;
+    background-image: -webkit-linear-gradient(top, #2F6CE5, #2980b9);
+    background-image: -moz-linear-gradient(top, #2F6CE5, #2980b9);
+    background-image: -ms-linear-gradient(top, #2F6CE5, #2980b9);
+    background-image: -o-linear-gradient(top, #2F6CE5, #2980b9);
+    background-image: linear-gradient(to bottom, #2F6CE5, #2980b9);
+    -webkit-border-radius: 20;
+    -moz-border-radius: 20;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    width: 20rem;
+    border: none;
+    height: 2.5rem;
+    margin: 19px 0 24px 0;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.btn2 {
+    background: #fff;
+    background-image: -webkit-linear-gradient(top, #fff, #fff);
+    background-image: -moz-linear-gradient(top, #fff, #fff);
+    background-image: -ms-linear-gradient(top, #fff, #fff);
+    background-image: -o-linear-gradient(top, #fff, #fff);
+    background-image: linear-gradient(to bottom, #fff, #fff);
+    -webkit-border-radius: 2;
+    -moz-border-radius: 2;
+    border-radius: 2px;
+    font-family: Arial;
+    color: #000;
+    font-size: 14px;
+    padding: 10px 20px 10px 20px;
+    border: solid #D9D9DB 2px;
+    text-decoration: none;
+    width: 20rem;
+    height: 2.375rem;
+    margin-bottom: 8px;
+}
+
+.col1__buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Form__input {
+    width: 20rem;
+    height: 2.875rem;
+    border: 1px solid #D9D9DB;
+    border-radius: 2px 2px 0px 0px;
+    background: #F7F8FA
+}
+
+.Form__input::placeholder {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 16px;
+    color: #8A8A8A;
+}
+
+.visibilityIcon {
+    position: absolute;
+    bottom: 5.688rem;
+    right: 2.563rem;
+}
+
+.form__name input {
+    width: 9.8rem;
+    height: 2.875rem;
+    border: 1px solid #D9D9DB;
+    border-radius: 2px 2px 0px 0px;
+    background: #F7F8FA
+}
+
+.col11 {
+    margin-top: 0;
+}
+
+col1__buttons h2 {
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+@media (max-width:800px) {
+    .modal {
+        width: 93%;
+        top: 64.5%;
+        left: 49%;
+        height: 95%;
+    }
+    .modal__main {
+        width: 35rem;
+        width: 100%;
+    }
+    .modal__col2 img {
+        display: none;
+    }
+    .modal__cols22 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    col1__main {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn1 {
+        width: 50%;
+        margin-left: -8rem;
+    }
+    .modal__col2 h3 span:nth-child(2) {
+        position: absolute;
+        bottom: 7.5rem;
+        left: 20rem
+    }
+    .modal__col2 p {
+        position: absolute;
+        bottom: -2rem;
+        left: 3.5rem
+    }
+    .modal__col2 h3 span:nth-child(1) {
+        display: none;
+    }
+    .modal__col1 {
+        margin-left: 1rem;
+    }
+    .spannn {}
+    .modal__span h3 span:nth-child(1) {
+        margin-left: -50rem;
+    }
+}
+
+@media (max-width:550px) {
+    .modal__main {
+        display: none;
+    }
+    .modal__col1 {
+        margin-left: 3.5rem;
+    }
+}

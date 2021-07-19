@@ -1,0 +1,180 @@
+.hero__main {
+    margin: 2rem 13rem 0 12.5rem;
+    max-width: 64.688rem;
+    position: relative;
+    /* background-color: crimson; */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3.5rem;
+    position: relative;
+}
+
+.header__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header__drop {
+    background-color: #EDEEF0;
+    position: absolute;
+    right: 9rem;
+}
+
+.header__drop button {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #EDEEF0;
+    border: none;
+    height: 2.25rem;
+    width: 8rem;
+    border-radius: 2px;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.header__drop button:nth-child(2) {
+    display: none;
+}
+
+.header__links span {
+    margin: .6rem 1.25rem 0 1.25rem;
+    cursor: pointer;
+}
+
+.header__links span:nth-child(1) {
+    border-bottom: 2px solid #000;
+    padding: .85rem;
+}
+
+.header__links span:nth-child(2) {
+    display: none;
+}
+
+.header__buttons {
+    display: flex;
+    position: relative;
+}
+
+.header__joingrp button {
+    background-color: rgba(47, 108, 229, 1);
+    color: white;
+    border: none;
+    height: 2.25rem;
+    width: 8rem;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: IBM Plex Sans;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    cursor: pointer;
+}
+
+.Header__margin {
+    background: rgba(224, 224, 224, 1);
+    width: 65rem;
+    height: 1px;
+    border: 1px solid #E0E0E0;
+}
+
+@media (max-width:930px) {
+    .hero__main {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header {
+        margin-left: 0;
+    }
+    .header__drop button:nth-child(1),
+    .Header__margin {
+        display: none;
+    }
+}
+
+@media (max-width:1180px) {
+    .hero__main {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .header {
+        margin-left: 0;
+    }
+}
+
+@media (max-width:550px) {
+    .header__links span:nth-child(1),
+    .Header__margin {
+        display: none;
+    }
+    .header__links span:nth-child(3) {
+        display: none;
+    }
+    .header__links span:nth-child(4) {
+        display: none;
+    }
+    .header__links span:nth-child(5) {
+        display: none;
+    }
+    .header__links span:nth-child(6) {
+        display: none;
+    }
+    .header__joingrp {
+        position: absolute;
+        top: -26rem;
+        right: 1.5rem;
+        background-color: transparent;
+    }
+    .header__joingrp button {
+        background-color: transparent;
+        border: 2px solid white;
+    }
+    .header__joingrp button:hover {
+        background-color: rgba(47, 108, 229, 1);
+        border: none;
+    }
+}
+
+@media (max-width:650px) {
+    .header__links span {
+        margin: .6rem .8rem 0 .8rem;
+    }
+}
+
+@media (max-width:549px) {
+    .header__drop button:nth-child(1) {
+        display: flex;
+        justify-content: right;
+        position: absolute;
+        right: rem;
+        top: -2.5rem;
+    }
+    .header__drop {
+        position: relative;
+    }
+    .header__links span:nth-child(2) {
+        display: block;
+        position: absolute;
+        left: 1rem;
+        top: -.7rem;
+        font-family: IBM Plex Sans;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 18px;
+        letter-spacing: 0.01em;
+        color: #212529;
+    }
+}
